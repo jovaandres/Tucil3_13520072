@@ -32,7 +32,7 @@ class Puzzle:
         if self.prevMove != None and self.prevMove in self.availableMove:
             opposite = Direction.opposite(self.prevMove)
             self.availableMove.remove(opposite)
-    
+
     def getCost(self):
         intersect = where((self.puzzle == self.solution), 0, 1)
         self.cost = intersect.sum()
