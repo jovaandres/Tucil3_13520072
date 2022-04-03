@@ -96,3 +96,4 @@ class Puzzle:
         newPuzzle = copy(self.puzzle)
         newPuzzle[newPuzzle == 16] = 0
         print(newPuzzle)
+        print()
